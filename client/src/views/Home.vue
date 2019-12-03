@@ -45,7 +45,7 @@ export default {
         this.outputStr += this.ogStr.charAt(this.i);
         this.i += 1;
       }
-      setTimeout(this.typeEffect, 40);
+      setTimeout(this.typeEffect, 10);
     },
   },
   created() {

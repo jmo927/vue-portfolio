@@ -5,7 +5,7 @@ import Home from '../views/Home.vue';
 import Projects from '../views/Projects.vue';
 import Blog from '../views/Blog.vue';
 import Game from '../views/Game.vue';
-
+import ErrorPage from '../views/ErrorPage.vue';
 
 Vue.use(VueRouter);
 
@@ -38,6 +38,11 @@ const routes = [
     path: '/game',
     name: 'game',
     component: Game,
+  },
+  {
+    path: '/error',
+    name: 'errorPage',
+    component: ErrorPage,
   },
 ];
 

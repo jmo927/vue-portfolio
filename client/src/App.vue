@@ -50,7 +50,7 @@ export default {
       runCount: 0,
       i: 0,
       // FALSE IN DEV, TRUE IN PROD FIX THIS YOU DUMB DUMB
-      isFirstTime: true,
+      isFirstTime: false,
       // stuff
       termInput: '',
     };
@@ -177,13 +177,14 @@ export default {
           this.$router.push('/blog');
           break;
         default:
-          this.outputStr = 'Invalid output, try "run about", "run blog", or "run projects".';
+          this.$router.push('/error');
       }
       // if (this.termInput === 'run game') {
       //   this.$router.push('/game');
       // }
 
       if (routePath === 'game') {
+        // eslint-disable-next-line
         console.log(this.termInput);
       }
 
